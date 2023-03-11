@@ -15,17 +15,17 @@
 
         <ImageView
             android:id="@+id/viewFlipperEmptyElement"
-            android:background="@color/empty_box"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/empty_box">
 
         </ImageView>
 
         <ImageView
             android:id="@+id/viewFlipperMoleElement"
-            android:src="@drawable/image_mole"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:src="@drawable/image_mole">
 
         </ImageView>
 

@@ -22,8 +22,9 @@ class ResultFragment : Fragment(R.layout.fragment_result) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         prefs = this.requireActivity().getPreferences(Context.MODE_PRIVATE)
-        if (prefs.getInt(MainActivity.PREF_CURR, 0) > prefs.getInt(MainActivity.PREF_RECORD, 0)){
-             prefs.edit().putInt(MainActivity.PREF_RECORD, prefs.getInt(MainActivity.PREF_CURR, 0)).apply()
+        if (prefs.getInt(MainActivity.PREF_CURR, 0) > prefs.getInt(MainActivity.PREF_RECORD, 0)) {
+            prefs.edit().putInt(MainActivity.PREF_RECORD, prefs.getInt(MainActivity.PREF_CURR, 0))
+                .apply()
         }
     }
 
