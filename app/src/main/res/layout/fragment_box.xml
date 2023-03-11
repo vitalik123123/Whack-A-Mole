@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootBox"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ViewFlipper
+        android:id="@+id/viewFlipperBox"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:inAnimation="@anim/flipin"
+        android:outAnimation="@anim/flipout">
+
+        <ImageView
+            android:id="@+id/viewFlipperEmptyElement"
+            android:background="@color/empty_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/viewFlipperMoleElement"
+            android:src="@drawable/image_mole"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+    </ViewFlipper>
+
+</FrameLayout>
